@@ -43,7 +43,7 @@ if metar_data:
 
     # Update item title with the current time of the update
     item_title = ET.SubElement(item, 'title')
-    item_title.text = f"{current_time}"
+    item_title.text = f"{current_time}Z"
 
     item_link = ET.SubElement(item, 'link')
     item_link.text = url
