@@ -36,7 +36,7 @@ jobs:
       run: |
         git config --global user.name "sienta01"
         git config --global user.email "timothysubroto@gmail.com"
-        git add metar_rss_feed.xml  # Add the updated XML file
+        git add wadd_metar_rss_feed.xml  # Add the updated XML file
         git commit -m "Update METAR RSS feed"  # Commit changes
         git push  # Push to GitHub 
       
