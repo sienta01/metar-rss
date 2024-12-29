@@ -2,8 +2,8 @@ name: Update METAR RSS Feed
 
 on:
   schedule:
-    # Cron syntax: Runs every 30 minutes
-    - cron: '*/30 * * * *'  # Every 30 minutes
+    # Cron syntax: Runs every minute 05 and 35
+    - cron: '5,35 * * * *'  # Every minute 05 and 35
   workflow_dispatch:  # Allows manual trigger of the workflow
 
 jobs:
