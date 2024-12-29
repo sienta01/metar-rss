@@ -38,6 +38,7 @@ jobs:
         git config --global user.email "timothysubroto@gmail.com"
         git add metar_rss_feed.xml  # Add the updated XML file
         git commit -m "Update METAR RSS feed"  # Commit changes
-        git push  # Push to GitHub
+        git push --force  # Push to GitHub 
+      
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Automatically provided by GitHub
