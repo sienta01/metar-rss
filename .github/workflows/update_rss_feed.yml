@@ -1,0 +1,43 @@
+name: Update METAR RSS Feed
+
+on:
+  schedule:
+    # Cron syntax: Runs once a day at midnight UTC
+    - cron: '0 0 * * *'  # Adjust this schedule to suit your needs
+  workflow_dispatch:  # Allows manual trigger of the workflow
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout repository to access the code and files
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Step 2: Set up Python environment
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    # Step 3: Install dependencies (requests library for fetching METAR data)
+    - name: Install dependencies
+      run: |
+        pip install requests
+
+    # Step 4: Run the Python script to fetch METAR data and update the XML
+    - name: Fetch and update METAR data
+      run: |
+        python metar_WADD.py  # Make sure this script updates the XML file
+
+    # Step 5: Commit and push the updated XML file
+    - name: Commit and push updated RSS feed
+      run: |
+        git config --global user.name "your-github-username"
+        git config --global user.email "your-email@example.com"
+        git add metar_rss_feed.xml  # Add the updated XML file
+        git commit -m "Update METAR RSS feed"  # Commit changes
+        git push  # Push to GitHub
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Automatically provided by GitHub
