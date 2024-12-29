@@ -2,8 +2,8 @@ name: Update METAR RSS Feed
 
 on:
   schedule:
-    # Cron syntax: Runs once a day at midnight UTC
-    - cron: '0 0 * * *'  # Adjust this schedule to suit your needs
+    # Cron syntax: Runs every 30 minutes
+    - cron: '*/30 * * * *'  # Every 30 minutes
   workflow_dispatch:  # Allows manual trigger of the workflow
 
 jobs:
@@ -34,8 +34,8 @@ jobs:
     # Step 5: Commit and push the updated XML file
     - name: Commit and push updated RSS feed
       run: |
-        git config --global user.name "your-github-username"
-        git config --global user.email "your-email@example.com"
+        git config --global user.name "sienta01"
+        git config --global user.email "timothysubroto@gmail.com"
         git add metar_rss_feed.xml  # Add the updated XML file
         git commit -m "Update METAR RSS feed"  # Commit changes
         git push  # Push to GitHub
