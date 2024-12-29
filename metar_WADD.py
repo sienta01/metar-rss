@@ -54,7 +54,7 @@ if metar_data:
     rss_feed = ET.tostring(rss, encoding='unicode', method='xml')
 
     # Save to a file
-    with open('metar_rss_feed.xml', 'w') as file:
+    with open('wadd_metar_rss_feed.xml', 'w') as file:
         file.write(rss_feed)
 
     print('RSS feed generated and saved as metar_rss_feed.xml')
