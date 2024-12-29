@@ -18,6 +18,9 @@ else:
     metar_data = None
 
 if metar_data:
+    # Get the current time in a readable format for the title
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
     # Create the root element
     rss = ET.Element('rss')
     rss.set('version', '2.0')
@@ -38,8 +41,9 @@ if metar_data:
     # Add an item for the METAR report
     item = ET.SubElement(channel, 'item')
 
+    # Update item title with the current time of the update
     item_title = ET.SubElement(item, 'title')
-    item_title.text = f"METAR Report for WADD"
+    item_title.text = f"METAR Report Update at {current_time}"
 
     item_link = ET.SubElement(item, 'link')
     item_link.text = url
@@ -57,6 +61,6 @@ if metar_data:
     with open('wadd_metar_rss_feed.xml', 'w') as file:
         file.write(rss_feed)
 
-    print('RSS feed generated and saved as metar_rss_feed.xml')
+    print('RSS feed generated and saved as wadd_metar_rss_feed.xml')
 else:
     print("Failed to generate RSS feed due to invalid data.")
