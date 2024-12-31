@@ -7,7 +7,7 @@ def format_pubdate():
     return datetime.datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S %z')
 
 # Fetch the data from the URL
-url = 'https://aviationweather.gov/api/data/metar?ids=WADD'
+url = 'https://aviationweather.gov/api/data/metar?ids=WADD&hours=24'
 response = requests.get(url)
 
 # Check if the response is valid
