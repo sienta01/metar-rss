@@ -1,4 +1,5 @@
-<rss version="2.0"><channel><title>Aviation Weather METAR Data for WADD</title><link>https://aviationweather.gov/api/data/metar?ids=WADD&amp;hours=24</link><description>Latest METAR data for WADD</description><item><title>2025-05-14 20:41:15Z</title><link>https://aviationweather.gov/api/data/metar?ids=WADD&amp;hours=24</link><description>WADD 142030Z 10004KT 9999 FEW017 27/26 Q1009 NOSIG
+<rss version="2.0"><channel><title>Aviation Weather METAR Data for WADD</title><link>https://aviationweather.gov/api/data/metar?ids=WADD&amp;hours=24</link><description>Latest METAR data for WADD</description><item><title>2025-05-14 21:20:35Z</title><link>https://aviationweather.gov/api/data/metar?ids=WADD&amp;hours=24</link><description>WADD 142100Z 10006KT 9999 FEW017 27/26 Q1009 NOSIG
+WADD 142030Z 10004KT 9999 FEW017 27/26 Q1009 NOSIG
 WADD 142000Z 08005KT 9999 FEW016 26/26 Q1009 NOSIG
 WADD 141930Z 07005KT 9999 FEW017 27/26 Q1009 NOSIG
 WADD 141900Z 06004KT 9999 SCT016 27/26 Q1010 NOSIG
@@ -44,5 +45,4 @@ WADD 132330Z 10005KT 8000 -RA FEW014CB BKN015 26/26 Q1010 TEMPO TL2400 8000 -RA
 WADD 132300Z 13006KT 8000 -TSRA FEW014CB BKN015 26/26 Q1010 TEMPO TL2400 -TSRA
 WADD 132230Z 06004KT 8000 -TSRA FEW014CB BKN015 26/26 Q1010 TEMPO TL2330 -TSRA
 WADD 132200Z 06004KT 8000 -RA FEW014CB BKN015 26/26 Q1010 TEMPO TL2300 -RA
-WADD 132130Z 07004KT 8000 -RA FEW014CB BKN015 26/26 Q1009 TEMPO TL2230 -RA
-WADD 132100Z 09004KT 8000 -RA FEW014CB BKN015 26/26 Q1009 TEMPO TL2200 -RA</description><pubDate>Wed, 14 May 2025 20:41:15 </pubDate></item></channel></rss>
+WADD 132130Z 07004KT 8000 -RA FEW014CB BKN015 26/26 Q1009 TEMPO TL2230 -RA</description><pubDate>Wed, 14 May 2025 21:20:35 </pubDate></item></channel></rss>
