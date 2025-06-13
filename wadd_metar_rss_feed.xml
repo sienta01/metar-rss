@@ -1,4 +1,5 @@
-<rss version="2.0"><channel><title>Aviation Weather METAR Data for WADD</title><link>https://aviationweather.gov/api/data/metar?ids=WADD&amp;hours=24</link><description>Latest METAR data for WADD</description><item><title>2025-06-13 05:27:30Z</title><link>https://aviationweather.gov/api/data/metar?ids=WADD&amp;hours=24</link><description>WADD 130500Z 11013KT 9999 SCT016 30/27 Q1011 NOSIG
+<rss version="2.0"><channel><title>Aviation Weather METAR Data for WADD</title><link>https://aviationweather.gov/api/data/metar?ids=WADD&amp;hours=24</link><description>Latest METAR data for WADD</description><item><title>2025-06-13 05:45:32Z</title><link>https://aviationweather.gov/api/data/metar?ids=WADD&amp;hours=24</link><description>WADD 130530Z 11012KT 9999 SCT016 30/27 Q1011 NOSIG
+WADD 130500Z 11013KT 9999 SCT016 30/27 Q1011 NOSIG
 WADD 130430Z 11014KT 9999 SCT016 30/27 Q1011 NOSIG
 WADD 130400Z 11015KT 9999 SCT016 29/26 Q1012 NOSIG
 WADD 130330Z 10013KT 9999 SCT016 29/27 Q1012 NOSIG
@@ -44,5 +45,4 @@ WADD 120800Z 12018KT 9999 FEW017 29/25 Q1009 NOSIG
 WADD 120730Z 12019KT 9999 FEW017 29/25 Q1009 NOSIG
 WADD 120700Z 12017KT 9999 FEW017 30/25 Q1009 NOSIG
 WADD 120630Z 11017KT 9999 FEW017 30/25 Q1009 NOSIG
-WADD 120600Z 12017KT 9999 FEW017 29/25 Q1010 NOSIG
-WADD 120530Z 12017KT 9999 FEW016 30/25 Q1010 NOSIG</description><pubDate>Fri, 13 Jun 2025 05:27:30 </pubDate></item></channel></rss>
+WADD 120600Z 12017KT 9999 FEW017 29/25 Q1010 NOSIG</description><pubDate>Fri, 13 Jun 2025 05:45:32 </pubDate></item></channel></rss>
